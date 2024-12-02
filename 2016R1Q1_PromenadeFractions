@@ -52,4 +52,4 @@ for i in s:
     if current_HCF > 1:
         current = (current[0]//current_HCF, current[1]//current_HCF)
 
-print(current)
+print(f"{current[0]} / {current[1]}")
