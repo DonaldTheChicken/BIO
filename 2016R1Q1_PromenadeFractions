@@ -37,19 +37,14 @@ s = 1
 last_l = (1, 0) #value before the last L (l, m)
 last_r = (0, 1) #value before the last R (r, s)
 
-has_l = 0
-has_r = 0
-
 current = (1, 1)
 
 s = input()
 
 for i in s:
     if i == "L":
-        has_l = 1
         last_l = current
     else:
-        has_r = 1
         last_r = current
     
     current = (last_l[0] + last_r[0], last_l[1] + last_r[1])
